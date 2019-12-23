@@ -4,9 +4,10 @@ metadata:
   name: factorio
 spec:
   ports:
-  - name: "27015"
-    port: 27015
-    targetPort: 27015
+  - name: "34197"
+    port: 34197
+    targetPort: 34197
+    protocol: UDP
   selector:
     app: factorio
   type: LoadBalancer
@@ -36,7 +37,8 @@ spec:
         image: factoriotools/factorio
         name: factorio
         ports:
-        - containerPort: 27015
+        - containerPort: 34197
+          protocol: UDP
         resources:
           requests:
             memory: "2Gi"
