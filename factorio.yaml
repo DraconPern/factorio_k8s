@@ -41,7 +41,7 @@ spec:
           requests:
             memory: "2Gi"
         volumeMounts:
-        - mountPath: /opt/factorio
+        - mountPath: /factorio
           name: factorio
         resources:
           limits:
