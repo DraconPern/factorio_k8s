@@ -35,6 +35,7 @@ spec:
         - name: factorio_ROOT_PASSWORD
           value: root
         image: factoriotools/factorio
+        imagePullPolicy: Always
         name: factorio
         ports:
         - containerPort: 34197
