@@ -32,8 +32,6 @@ spec:
       - env:
         - name: PORT
           value: 34197
-        - name: factorio_ROOT_PASSWORD
-          value: root
         image: factoriotools/factorio
         imagePullPolicy: Always
         name: factorio
