@@ -41,17 +41,9 @@ spec:
           protocol: UDP
         - containerPort: 27015
           protocol: TCP
-        resources:
-          requests:
-            memory: "2Gi"
         volumeMounts:
         - mountPath: /factorio
           name: factorio
-        resources:
-          limits:
-            memory: "2Gi"
-          requests:
-            memory: "512M"
       restartPolicy: Always
   volumeClaimTemplates:
   - metadata:
