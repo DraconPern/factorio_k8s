@@ -33,7 +33,7 @@ spec:
       - env:
         - name: PORT
           value: 34197
-        image: factoriotools/factorio
+        image: factoriotools/factorio:latest
         imagePullPolicy: Always
         name: factorio
         ports:
