@@ -33,7 +33,7 @@ spec:
       containers:
       - env:
         - name: PORT
-          value: 34197
+          value: "34197"
         image: factoriotools/factorio:latest
         imagePullPolicy: Always
         name: factorio
